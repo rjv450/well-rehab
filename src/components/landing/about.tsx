@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, Eye } from "lucide-react";
-
+import banner2 from "@/assets/images/banner/banner2.png";
 export function About() {
   return (
-    <section id="about" className="w-full py-20 md:py-28 bg-background px-4 md:px-6">
+    <section id="about" className="w-full py-20 md:py-28 bg-background px-4 md:px-6 lg:px-24">
       <div className="container mx-auto">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="space-y-6">
@@ -51,7 +51,7 @@ export function About() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/550x550.png"
+              src={banner2}
               alt="A caring professional helping a patient"
               data-ai-hint="therapist patient"
               width={550}

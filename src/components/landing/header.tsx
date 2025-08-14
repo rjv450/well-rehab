@@ -6,6 +6,7 @@ import { Menu, Waves } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/images/logo.png";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -38,12 +39,9 @@ export function Header() {
           : "bg-transparent"
       )}
     >
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6 lg:px-24">
         <Link href="#home" className="flex items-center gap-2">
-          <Waves className="h-8 w-8 text-primary" />
-          <span className="text-xl font-bold text-foreground font-headline">
-            MiRA Rehabilitation
-          </span>
+          <img src={logo.src} alt="Logo" className="h-[60px] w-auto" />
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (

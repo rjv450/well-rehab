@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
+import banner1 from "@/assets/images/banner/banner1.png";
 export function Hero() {
   return (
     <section
-      id="home"
-      className="relative w-full py-24 md:py-32 lg:py-40 bg-gradient-to-b from-background to-secondary/50 px-4 md:px-6"
-    >
+  id="home"
+  className="relative w-full py-12 md:py-16 lg:py-12 bg-gradient-to-b from-background to-secondary/50 px-4 md:px-6  lg:px-24"
+>
       <div className="container mx-auto">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6">
@@ -30,7 +30,7 @@ export function Hero() {
           </div>
           <div className="relative flex items-center justify-center">
             <Image
-              src="https://placehold.co/600x400.png"
+              src={banner1}
               alt="Rehabilitation session in progress"
               data-ai-hint="rehabilitation clinic"
               width={600}

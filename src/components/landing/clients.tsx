@@ -64,7 +64,7 @@ const Marquee = ({
 
 export function Clients() {
   return (
-    <section id="clients" className="w-full py-20 md:py-28 bg-secondary/50 px-4 md:px-6">
+    <section id="clients" className="w-full py-20 md:py-28 bg-secondary/50 px-4 md:px-6 lg:px-24">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center space-y-6 text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">

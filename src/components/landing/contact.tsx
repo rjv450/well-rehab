@@ -3,7 +3,7 @@ import { ContactForm } from "./contact-form";
 
 export function Contact() {
   return (
-    <section id="contact" className="w-full py-20 md:py-28 bg-secondary/50 px-4 md:px-6">
+    <section id="contact" className="w-full py-20 md:py-28 bg-secondary/50 px-4 md:px-6 lg:px-24">
       <div className="container mx-auto">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="space-y-8">

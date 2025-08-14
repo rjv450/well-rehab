@@ -1,19 +1,17 @@
 import Link from "next/link";
 import { Waves, Twitter, Facebook, Linkedin } from "lucide-react";
+import logo from "@/assets/images/logo.png";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-background border-t">
-      <div className="container mx-auto px-4 py-12 md:px-6">
+      <div className="container mx-auto px-4 py-12 md:px-6 lg:px-24">
         <div className="grid gap-12 lg:grid-cols-4">
           <div className="flex flex-col gap-4">
             <Link href="#home" className="flex items-center gap-2">
-              <Waves className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold font-headline">
-                MiRA Rehabilitation
-              </span>
+              <img src={logo.src} alt="Logo" className="h-[60px] w-auto" />
             </Link>
             <p className="text-muted-foreground text-sm">
               Your trusted partner in rehabilitation and recovery.
