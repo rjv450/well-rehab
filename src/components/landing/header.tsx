@@ -65,10 +65,7 @@ export function Header() {
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
                 <Link href="#home" className="flex items-center gap-2">
-                  <Waves className="h-8 w-8 text-primary" />
-                  <span className="text-xl font-bold font-headline">
-                    MiRA Rehabilitation
-                  </span>
+                  <img src={logo.src} alt="Logo" className="h-[60px] w-auto" />
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
